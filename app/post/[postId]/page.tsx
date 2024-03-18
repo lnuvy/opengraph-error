@@ -29,6 +29,8 @@ export async function generateMetadata(
         title: "post title",
         description: "post description",
         images: ["https://via.placeholder.com/150"],
+
+        /** @see - If you set the openGraph type "article" on this page, you will get an error due to emails in the og-helper */
         type: "article",
         addUrl: `/post/${postId}`,
         authors: "custom author",

@@ -29,10 +29,6 @@ export const OG = (props: OGProps) => {
     addUrl = "",
     images = [`localhost:3000/_next/image?url=${VercelImage.src}&w=2048&q=75`],
     authors = "lnuvy",
-    // authors: {
-    //   name: "lnuvy",
-    //   url: "lnuvy.code@gmail.com",
-    // },
   } = props;
 
   return {
@@ -45,6 +41,9 @@ export const OG = (props: OGProps) => {
       authors,
       siteName: "OG_TEST_SITE",
       countryName: "Seongnam-si, Gyeonggi-do, Korea",
+
+      /** @see - If you define type as an "article", the emails will cause an error */
+      // Error: r.map is not a function
       emails: "lnuvy.code@gmail.com",
     } satisfies OpenGraph,
     twitter: {
