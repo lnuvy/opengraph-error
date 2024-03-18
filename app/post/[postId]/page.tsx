@@ -35,6 +35,16 @@ export async function generateMetadata(
         addUrl: `/post/${postId}`,
         authors: "custom author",
       }),
+
+      /**
+       * @see
+       * this way is not working, too!
+       *
+       */
+      // openGraph: {
+      //   type: "article",
+      //   emails: "test",
+      // },
     };
   } catch (e) {
     console.log(e);
